@@ -1,0 +1,3 @@
+﻿jquery Rounded Corners - http://jquery.malsup.com/corner/
+jquery draggable - http://jqueryui.com/draggable/
+jquery toggle - http://jqueryui.com/toggle/

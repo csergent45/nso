@@ -1,0 +1,285 @@
+﻿/*************************************** 
+|
+|       HTML ELEMENTS BEGIN
+|
+***************************************/
+/*---------------------------------
+|       PAGE AND BODY
+/--------------------------------*/
+html, body
+{
+    /* make the body expand to fill the visible window */
+    font-family: Verdana, Helvetica, Arial, sans-serif;
+    line-height: 125%;
+    height:105%;
+    width:100%;
+    padding:0;
+    margin:0;
+    /* erase window level scrollbars */
+    overflow: hidden
+}
+
+/*---------------------------------
+|       HEADINGS
+/--------------------------------*/
+h1, h2, h3
+{
+    margin:05em 0 1em 0
+}
+
+/*---------------------------------
+|       PARAGRAPHS
+/--------------------------------*/
+p
+{
+    margin:00 1em 0
+}
+
+/*************************************** 
+|
+|       HTML ELEMENTS END
+|
+***************************************/
+
+#loginTitle, #codeTypeTitle
+{
+    top:10%;
+    left:35%;
+    font-size:x-large;
+    font-weight:bold;
+    text-align:center;
+    margin:2em
+}
+
+
+#btnLogin, #btnStartCase, #btnCreateCase, #btnEnterAddressCode
+{
+    background-color: #68b12f;
+    Background:#68b12f
+}
+
+
+#loginPanel
+{
+    height:185px;
+    width:400px;
+    border-width:5px;
+    background-color:#cdc9c9;
+    border-color:#8b8989;
+    border-style:outset;    
+    margin-left:35%;
+    margin-top:5%
+}
+
+#lblUserName
+{
+    margin-left:5%
+}
+
+#lblPassword
+{
+    margin-left:8%
+}
+
+
+#lblErrorMessage
+{
+    margin-left:35%;
+    color:Red
+}
+
+/**:focus
+{
+    outline:none
+}
+*/
+
+
+.requiredNotification
+{
+    position:absolute;
+    color:#d45252;
+    margin:5px 0 0 0;
+    display:inline;
+    margin-left:10%
+}
+
+
+
+
+/* Sets the background in all required fields */
+input:required
+{
+    background: #fff url(images/red_asterisk.png) no-repeat 98% center
+}
+
+
+/* Sets the background in all required fields that are not valid to red borders with a box shadow */
+input:focus:invalid
+{
+   background: #fff url(images/invalid.png) no-repeat 98% center;
+   box-shadow: 0 0 5px #d45252;
+   border-color: #b03535 
+}
+
+
+/* Sets the background in all required fields that are valid to green borders with a box shadow */
+input:focus:valid
+{
+    background: #fff url(images/valid.png) no-repeat 98% center;
+    box-shadow: 0 0 5px #5cd053;
+    border-color: #28921f
+}    
+
+
+input:required:valid
+{
+    background: #fff url(images/valid.png) no-repeat 98% center;
+    box-shadow: 0 0 5px #5cd053;
+    border-color: #28921f
+}
+
+
+
+/* Case Type Page */
+#caseType
+{
+    text-align:center;
+    margin-top:5%;
+    line-height:70px
+           
+}
+
+
+
+/*---------------------------------
+|       MAP
+/--------------------------------*/
+#mapSection
+{
+    position:absolute;
+    top:0%;
+    left:0%;
+    height:100%;
+    width:100%;
+    background-color:White;
+    color:Black;
+    z-index:0;
+    display:block
+      
+}
+
+
+#footerTitle
+{
+    position:absolute;
+    height:auto;
+    bottom:0%;
+    width:auto;
+    font-size:smaller;
+    right:0%;
+    z-index:100
+}
+
+
+/*
+    The sidebar contains all of the controls
+    for interacting with the map
+*/
+
+/*
+    The sidebar contains all of the controls
+    for interacting with the map
+*/
+#sideBar
+{
+    display:block; /* Only for IE8 or less */
+    position:absolute;
+    width:376px;
+    height:auto;
+    background-color:transparent;
+    border-color:transparent;
+    padding:0px;
+    left:50px;
+    top:50px;
+    z-index:200
+}
+
+
+#sideBarContent
+{
+    width:374px;
+    padding:0px
+}
+   
+
+#sideBarTopFill, #sideBarBottomFill
+{
+    height:15px;
+    background-color:#E1EBFB
+}
+
+#sideBarTop
+{
+    background-color:#E1EBFB;
+    height:5px;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px
+}
+
+#sideBarBottom
+{
+    background-color:#E1EBFB;
+    height:5px;
+    border-bottom-left-radius:5px;
+    border-bottom-right-radius:5px
+}
+
+
+#frmNavHelp
+{
+    text-align:center
+}
+
+    
+
+
+/*######################################
+|
+|       HTML TAGS END
+|
+#######################################*/
+
+
+.multiLine
+{
+    width:200px
+}
+
+
+/* Caution text */
+.cautionMessage
+{
+    font-weight:bold;
+    color:#ffd700
+}
+
+/* Warns user information is missing or information is not the desired result */
+.warningMessage
+{
+    font-weight:bold;
+    color:Red
+}
+
+/* Notifies user that the process was valid and displays the desired result */
+.successMessage
+{
+    font-weight:bold;
+    color:Green
+}
+
+
+.violationList
+{
+    width:325px
+}
